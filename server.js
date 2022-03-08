@@ -25,9 +25,58 @@ app.use(express.urlencoded({ extended: true })); // parse urlencoded request bod
 app.use(methodOverride("_method")); // override for put and delete requests from forms
 app.use(express.static("public")); // serve files from public statically
 
-app.get('/shoes', (req, res) => {
-    res.json({message: 'hello world'})
+
+//Models connection
+
+const DATABASE_URL = process.env.DATABASE_URL;
+const CONFIG = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+};
+
+// Establish 
+
+mongoose.connect(DATABASE_URL, CONFIG);
+
+mongoose.connection
+    .on('open', () => console.log('We are in the building'))
+    .on('close', () => console.log('Mongo Has left the building'))
+    .on('error', (error) => console.log(error))
+
+
+////////////////////////////
+////ROUTES
+////////////////////////////
+
+/////Index Route 
+app.get('/products', (req, res) =>{
+    res.render('./shoes/Index')
 })
+
+
+//////New Route 
+
+
+/////Delete Route 
+
+
+
+/////Update Route 
+
+
+
+/////Create Route 
+
+
+///////Edit Route 
+
+
+
+///////Show Route 
+
+
+
+
 
 
 //////////////////////////////////////////////
