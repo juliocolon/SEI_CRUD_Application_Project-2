@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Merriweather:ital@0;1&family=Space+Mono&family=Ubuntu+Mono&family=Work+Sans&display=swap');
 
-body, h5, p{
+body{
     font-family: 'Ubuntu Mono', monospace;
     font-weight: bold;
     font-size: larger;
-     color: black;
 }
-img.d-block.w-100{
-    width: 50%;
-}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  a.nav-link{
+      font-size: larger;
+      text-decoration: underline;
+  }
+
+  a.nav-link:hover{
+    background-color:firebrick
+  }
+
+  #shoe-carousel{
+      background-color: firebrick;
+  }

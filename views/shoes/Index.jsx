@@ -5,43 +5,38 @@ class Index extends React.Component {
     render() {
         return (
             <DefaultLayout title="SNEAKERS">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
+                <div id="shoe-carousel" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#shoe-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#shoe-carousel" data-slide-to="1"></li>
+                        <li data-target="#shoe-carousel" data-slide-to="2"></li>
+                        <li data-target="#shoe-carousel" data-slide-to="3"></li>
+                        <li data-target="#shoe-carousel" data-slide-to="3"></li>
+                    </ul>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/images/SNEAKERS2.png" class="d-block w-100" alt="..." />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+                            <img src="/images/newbalance.png" alt="New Balance M5740LLG" width="700" height="400" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/SNEAKERS2.png" class="d-block w-100" alt="..." />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
+                            <img src="/images/airmax.png" alt="Nike Airmax 95" width="700" height="400" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/SNEAKERS2.png" class="d-block w-100" alt="..." />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
+                            <img src="/images/salomon.png" alt="Salomon Raid Wind Advanced" width="1100" height="500" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/newbalanceblue.png" alt="New Balance 550" width="700" height="400" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/nikeAF1.png" alt="Nike AF1" width="700" height="400" />
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </button>
+                    
+                    <a class="carousel-control-prev" href="#shoe-carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#shoe-carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </DefaultLayout>
         )

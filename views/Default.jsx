@@ -18,9 +18,9 @@ class DefaultLayout extends React.Component {
                 <body>
 
                     <header>
-                        <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+                        <nav class="navbar navbar-expand-md navbar-light bg-light">
                             <div class="container-md">
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand" href="/sneakers">
                                     <img src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
                                 </a>
                                 <div>
