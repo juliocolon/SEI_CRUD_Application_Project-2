@@ -49,7 +49,7 @@ mongoose.connection
 ////////////////////////////
 
 /////Index Route 
-app.get('/products', (req, res) =>{
+app.get('/sneakers', (req, res) =>{
     res.render('./shoes/Index')
 })
 
