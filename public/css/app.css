@@ -20,6 +20,20 @@ body{
     background-color:firebrick
   }
 
+  a{
+      color:firebrick;
+  }
+
   #shoe-carousel{
       background-color: firebrick;
+  }
+
+  .page-footer{
+      color: whitesmoke;
+      background-color: black;
+      height: 45vh;
+  }
+
+  .col{
+      margin-top: 8%;
   }
