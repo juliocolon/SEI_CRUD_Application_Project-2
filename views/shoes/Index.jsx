@@ -3,7 +3,7 @@ const DefaultLayout = require('../Default.jsx');
 
 class Index extends React.Component {
     render() {
-        const shoes = this.props.shoes
+        const { shoes } = this.props
         return (
             <DefaultLayout title="SNEAKERS">
                 <div id="shoe-carousel" class="carousel slide" data-ride="carousel">
@@ -46,10 +46,12 @@ class Index extends React.Component {
                             return (
                                 <div class="card-deck">
                                     <div class="card">
-                                        <img  id="card-section" src={shoes.img} class="card-img-top" alt="Picture of Shoe" />
+                                        <a href={`/sneakers/${shoes._id}`}>
+                                            <img id="card-section" src={shoes.img} class="card-img-top" alt="Picture of Shoe" />
+                                        </a>
                                         <div class="card-body">
                                             <h5 class="card-title">{shoes.name}</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eligendi vero vel impedit aut culpa, eveniet beatae cumque officiis architecto dolorum sint est explicabo delectus harum voluptates libero, veritatis eos!</p>
+                                            <p class="card-text">{shoes.desc}</p>
                                             <p class="card-text"><small class="text-muted">{shoes.price}</small></p>
                                         </div>
                                     </div>
@@ -65,3 +67,4 @@ class Index extends React.Component {
 }
 
 module.exports = Index;
+

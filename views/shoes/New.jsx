@@ -24,8 +24,15 @@ class New extends React.Component {
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">DESCRIPTION</label>
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-primary">UPLOAD IMAGE</button>
+                            <input type="password" class="form-control" id="inputPassword3" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">IMAGE URL</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" />
                         </div>
                     </div>
                     <div class="form-group row">
