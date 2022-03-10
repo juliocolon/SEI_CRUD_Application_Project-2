@@ -31,7 +31,7 @@ class Index extends React.Component {
                             <img src="/images/nikeAF1.png" alt="Nike AF1" width="700" height="400" />
                         </div>
                     </div>
-                    
+
                     <a class="carousel-control-prev" href="#shoe-carousel" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
@@ -40,15 +40,24 @@ class Index extends React.Component {
                     </a>
                 </div>
                 <div>
-                    <ul>
-                        {
-                            shoes.map((shoes, i) =>{
-                                return (
-                                    <li key={`${shoes._id}`}><a href="#">{shoes.name[0].toUpperCase() + shoes.name.slice(1)}</a></li>
-                                )
-                            })
-                        }
-                    </ul>
+
+                    {
+                        shoes.map((shoes, i) => {
+                            return (
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img  id="card-section" src={shoes.img} class="card-img-top" alt="Picture of Shoe" />
+                                        <div class="card-body">
+                                            <h5 class="card-title">{shoes.name}</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat eligendi vero vel impedit aut culpa, eveniet beatae cumque officiis architecto dolorum sint est explicabo delectus harum voluptates libero, veritatis eos!</p>
+                                            <p class="card-text"><small class="text-muted">{shoes.price}</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+
                 </div>
             </DefaultLayout>
         )

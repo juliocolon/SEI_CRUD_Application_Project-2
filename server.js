@@ -50,22 +50,22 @@ mongoose.connection
 ////////////////////////////
 
 /////Index Route 
-app.get('/sneakers/seed', (req, res) => {
-    const startShoes = [
-        { name: "New Balance M5740LLG", price: "$90.00", img: "/images/newbalance.png" },
-        { name: "Nike Airmax 95", price: "$120.00", img: "/images/airmax.png" }
-    ];
+// app.get('/sneakers/seed', (req, res) => {
+//     const startShoes = [
+//         { name: "New Balance M5740LLG", price: "$90.00", img: "/images/newbalance.png" },
+//         { name: "Nike Airmax 95", price: "$120.00", img: "/images/airmax.png" },
+//     ];
 
-    // Delete all fruits
-    Shoes.deleteMany({}).then((data) => {
-        // Seed Starter Fruits
-        Shoes.create(startShoes).then((data) => {
-            // send created fruits as response to confirm creation
-            res.json(data);
-        })
+//     // Delete all fruits
+//     Shoes.deleteMany({}).then((data) => {
+//         // Seed Starter Fruits
+//         Shoes.create(startShoes).then((data) => {
+//             // send created fruits as response to confirm creation
+//             res.json(data);
+//         })
 
-    })
-});
+//     })
+// });
 
 app.get('/sneakers', (req, res) => {
     Shoes.find({})
@@ -78,7 +78,9 @@ app.get('/sneakers', (req, res) => {
 })
 
 //////New Route 
-
+app.get('/sneakers/sell', (req, res) => {
+    res.render('shoes/New')
+})
 
 /////Delete Route 
 

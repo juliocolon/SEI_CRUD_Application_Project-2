@@ -26,13 +26,19 @@ class DefaultLayout extends React.Component {
                                 <div>
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">FOOTWEAR</a>
+                                            <a class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/sneakers/sell">SELL</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="#">LOGIN</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="#">CART</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#contact">CONTACT</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -53,7 +59,7 @@ class DefaultLayout extends React.Component {
 
                                 <div class="col text-center">
 
-                                    <h5 class="text-uppercase">SNEAKERS</h5>
+                                    <p id="contact">SNEAKERS</p>
                                     <p>Contact: JCOLON1092@GMAIL.COM</p>
                                     <p>Twitter: @JCCOLOGNE</p>
                                     <p>Instagram:@_JULIOCOLON</p>
@@ -65,7 +71,7 @@ class DefaultLayout extends React.Component {
                         </div>
 
                         <div class="footer-copyright text-center py-3">© 2022 Copyright:
-                            <a href="#"> Julio Colon</a>
+                            <a href="#">Julio Colon</a>
                         </div>
 
                     </footer>
