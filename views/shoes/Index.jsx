@@ -3,6 +3,7 @@ const DefaultLayout = require('../Default.jsx');
 
 class Index extends React.Component {
     render() {
+        const shoes = this.props.shoes
         return (
             <DefaultLayout title="SNEAKERS">
                 <div id="shoe-carousel" class="carousel slide" data-ride="carousel">
@@ -37,6 +38,17 @@ class Index extends React.Component {
                     <a class="carousel-control-next" href="#shoe-carousel" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                </div>
+                <div>
+                    <ul>
+                        {
+                            shoes.map((shoes, i) =>{
+                                return (
+                                    <li key={`${shoes._id}`}><a href="#">{shoes.name[0].toUpperCase() + shoes.name.slice(1)}</a></li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
             </DefaultLayout>
         )

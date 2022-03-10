@@ -4,8 +4,9 @@
 require('dotenv').config(); //Load ENV Variables
 const express = require('express'); // import express
 const morgan = require('morgan'); //import morgan
-const methodOverride = require('method-override'); 
-const mongoose = require('mongoose'); 
+const methodOverride = require('method-override');
+const mongoose = require('mongoose');
+const Shoes = require('./models/shoes.js');
 const port = process.env.PORT || 3000
 
 
@@ -49,10 +50,32 @@ mongoose.connection
 ////////////////////////////
 
 /////Index Route 
-app.get('/sneakers', (req, res) =>{
-    res.render('./shoes/Index')
-})
+app.get('/sneakers/seed', (req, res) => {
+    const startShoes = [
+        { name: "New Balance M5740LLG", price: "$90.00", img: "/images/newbalance.png" },
+        { name: "Nike Airmax 95", price: "$120.00", img: "/images/airmax.png" }
+    ];
 
+    // Delete all fruits
+    Shoes.deleteMany({}).then((data) => {
+        // Seed Starter Fruits
+        Shoes.create(startShoes).then((data) => {
+            // send created fruits as response to confirm creation
+            res.json(data);
+        })
+
+    })
+});
+
+app.get('/sneakers', (req, res) => {
+    Shoes.find({})
+        .then((shoes) => {
+            res.render("shoes/Index", { shoes })
+        })
+        .catch((error) => {
+            res.status(400).json({ error })
+        })
+})
 
 //////New Route 
 
