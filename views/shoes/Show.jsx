@@ -7,12 +7,24 @@ class Show extends React.Component {
         return (
             <DefaultLayout title="Show Page">
                 <div>
-                    <h1>This is the Show Page for {shoes.name} </h1>
-                    <a href={`/sneakers/${shoes._id}/edit`}>Edit This Shoe</a>
-                    <a href="/sneakers">Go Back to the index</a>
-                    <p>{shoes.name}</p>
-                    <p>{shoes.price}</p>
+
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1>{shoes.name} </h1>
+                        </div>
+                        <div class="card-body">
+                            <img class="show-page-img" src={shoes.img} alt="Shoe Image" />
+                            <p class="card-text">{shoes.desc}</p>
+                            <p class="card-text">{shoes.price}</p>
+                            <a href={`/sneakers/${shoes._id}/edit`} class="btn btn-primary btn-show">EDIT THIS LISTING</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            2 days ago
+                        </div>
+                    </div>
                 </div>
+
             </DefaultLayout>
         )
     }

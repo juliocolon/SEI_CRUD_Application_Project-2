@@ -26,7 +26,7 @@ class DefaultLayout extends React.Component {
                                 <div>
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
+                                            <a id="top" class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="/sneakers/sell">SELL</a>
@@ -59,7 +59,7 @@ class DefaultLayout extends React.Component {
 
                                 <div class="col text-center">
 
-                                    <p id="contact">SNEAKERS</p>
+                                  <a href="/sneakers/#top"><p id="contact">SNEAKERS</p></a>  
                                     <p>Contact: JCOLON1092@GMAIL.COM</p>
                                     <p>Twitter: @JCCOLOGNE</p>
                                     <p>Instagram:@_JULIOCOLON</p>

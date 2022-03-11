@@ -28,6 +28,7 @@ body{
       color:firebrick;
   }
 
+
   button.btn-primary{
       background-color: firebrick;
       border: 1px solid whitesmoke ;
@@ -64,6 +65,20 @@ div.new-intro-text{
 form{
     width: 50%;
 }
+
 div.form-group{
     margin-left: 2%;
+}
+
+.show-page-img{
+    max-width: 100%;
+}
+
+.btn-show{
+    background-color: firebrick;
+    border: none;
+}
+
+.btn-show:hover{
+    background-color: black;
 }
