@@ -82,3 +82,9 @@ div.form-group{
 .btn-show:hover{
     background-color: black;
 }
+
+#delete{
+    margin: auto;
+    margin-top: 1%;
+    max-width: 100%;
+}

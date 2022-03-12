@@ -16,11 +16,16 @@ class Show extends React.Component {
                         <div class="card-body">
                             <img class="show-page-img" src={shoes.img} alt="Shoe Image" />
                             <p class="card-text">{shoes.desc}</p>
-                            <p class="card-text">{shoes.price}</p>
-                            <a href={`/sneakers/${shoes._id}/edit`} class="btn btn-primary btn-show">EDIT THIS LISTING</a>
+                            <p class="card-text">${shoes.price}</p>
+                            <div>
+                                <a href={`/sneakers/${shoes._id}/edit`} class="btn btn-primary btn-show">{`Edit ${shoes.name} Listing`}</a>
+                            </div>
+
                         </div>
                         <div class="card-footer text-muted">
-                            2 days ago
+                            <form id="delete" action={`/sneakers/${shoes._id}?_method=DELETE`} method="POST">
+                                <input type="submit" value="Delete Listing" />
+                            </form>
                         </div>
                     </div>
                 </div>

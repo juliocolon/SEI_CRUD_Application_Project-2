@@ -12,7 +12,7 @@ class Index extends React.Component {
                         <li data-target="#shoe-carousel" data-slide-to="1"></li>
                         <li data-target="#shoe-carousel" data-slide-to="2"></li>
                         <li data-target="#shoe-carousel" data-slide-to="3"></li>
-                        <li data-target="#shoe-carousel" data-slide-to="3"></li>
+                        <li data-target="#shoe-carousel" data-slide-to="4"></li>
                     </ul>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -51,8 +51,7 @@ class Index extends React.Component {
                                         </a>
                                         <div class="card-body">
                                             <h5 class="card-title">{shoes.name}</h5>
-                                            <p class="card-text">{shoes.desc}</p>
-                                            <p class="card-text"><small class="text-muted">{shoes.price}</small></p>
+                                            <p class="card-text"><small class="text-muted">${shoes.price}</small></p>
                                         </div>
                                     </div>
                                 </div>
