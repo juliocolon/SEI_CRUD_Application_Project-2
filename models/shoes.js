@@ -1,12 +1,15 @@
-const mongoose = require('mongoose'); 
+const mongoose = require('./connection'); 
 
-const shoeSchema = new mongoose.Schema({
-    name: {type: String,required: true }, 
-    price: {type: String,required: true }, 
-    img: {type: String,required: true }, 
-    desc: {type: String,required: true }, 
+
+const { Schema, model} = mongoose; 
+
+const shoeSchema = new Schema({
+    name: String, 
+    price: String, 
+    img: String, 
+    desc: String
 })
 
-const Shoes = mongoose.model('Shoes', shoeSchema); 
+const Shoes = model('Shoes', shoeSchema); 
 
 module.exports = Shoes; 

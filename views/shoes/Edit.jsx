@@ -15,26 +15,26 @@ class Edit extends React.Component {
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">SNEAKER NAME</label>
                         <div class="col-sm-10">
-                            <input type="text" name="name" placeholder='enter sneaker name' class="form-control" />
+                            <input type="text" name="name" placeholder='enter sneaker name' class="form-control" defaultValue={shoes.name} />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">ASKING PRICE</label>
                         <div class="col-sm-10">
-                            <input type="text" name="price" placeholder='enter asking price' class="form-control" />
+                            <input type="text" name="price" placeholder='enter asking price' class="form-control" defaultValue={shoes.price} />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">DESCRIPTION</label>
                         <div class="col-sm-10">
-                            <textarea type="text" name="desc" placeholder='enter sneaker description' class="form-control">
+                            <textarea type="text" name="desc" placeholder='enter sneaker description' class="form-control" defaultValue={shoes.desc}>
                             </textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">IMAGE URL</label>
                         <div class="col-sm-10">
-                            <input type="text" name="img" placeholder='enter image url' class="form-control" />
+                            <input type="text" name="img" placeholder='enter image url' class="form-control" defaultValue={shoes.img} />
                         </div>
                     </div>
                     <div class="form-group row">
