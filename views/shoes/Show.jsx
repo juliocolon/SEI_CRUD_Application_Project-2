@@ -5,7 +5,7 @@ class Show extends React.Component {
     render() {
         const { shoes } = this.props
         return (
-            <DefaultLayout title="Show Page">
+            <DefaultLayout title="Show Page" username={username}>
                 <div>
 
 

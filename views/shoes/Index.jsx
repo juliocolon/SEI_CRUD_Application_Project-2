@@ -3,9 +3,10 @@ const DefaultLayout = require('../Default.jsx');
 
 class Index extends React.Component {
     render() {
-        const { shoes } = this.props
+        const { shoes, username } = this.props
+        // console.log(username + "we are inside")
         return (
-            <DefaultLayout title="SNEAKERS">
+            <DefaultLayout title="SNEAKERS" username={username}>
                 <div id="shoe-carousel" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li data-target="#shoe-carousel" data-slide-to="0" class="active"></li>

@@ -14,13 +14,13 @@ class Signup extends React.Component {
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">CREATE A USER NAME</label>
                         <div class="col-sm-10">
-                            <input type="text" name="username" placeholder='enter a user name' class="form-control" />
+                            <input type="text" name="username" placeholder='enter a user name' class="form-control" required />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label">CREATE A PASSWORD</label>
                         <div class="col-sm-10">
-                            <input type="text" name="password" placeholder='enter password' class="form-control" />
+                            <input type="text" name="password" placeholder='enter password' class="form-control" required />
                         </div>
                     </div>
                     <div class="form-group row">

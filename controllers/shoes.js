@@ -3,14 +3,27 @@ const Shoes = require("../models/shoes")
 
 const router = express.Router(); 
 
+////////////////////////////////////////
+// Router Middleware
+////////////////////////////////////////
+// Authorization Middleware
+router.use((req, res, next) => {
+    if (req.session.loggedIn) {
+      next();
+    } else {
+      res.redirect("/user/login");
+    }
+  });
+
 ////////////////////////////
 ////ROUTES
 ////////////////////////////
 
 router.get('/', (req, res) => {
+    // console.log(req.session.username + 'shoeeessss')
     Shoes.find({})
         .then((shoes) => {
-            res.render("shoes/Index", { shoes })
+            res.render("shoes/Index", { shoes: shoes, username: req.session.username })
         })
         .catch((error) => {
             res.status(400).json({ error })

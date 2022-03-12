@@ -17,6 +17,17 @@ class Index extends React.Component {
                         SIGN UP TO GET STARTED OR LOG IN WITH YOUR EXISTING ACCOUNT!
                     </p>
                 </div>
+                <div class="container-md">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a id="home"  href="/user/signup">SIGN UP</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a id="home"  href="/user/login">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div id="shoe-carousel" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li data-target="#shoe-carousel" data-slide-to="0" class="active"></li>

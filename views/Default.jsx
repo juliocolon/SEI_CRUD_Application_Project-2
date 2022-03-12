@@ -4,6 +4,8 @@ const Shoes = require('../models/shoes');
 
 class DefaultLayout extends React.Component {
     render() {
+        const { username } = this.props
+        console.log(`we are in default layout:` + username)
         return (
             <html lang='en'>
                 <head>
@@ -16,38 +18,47 @@ class DefaultLayout extends React.Component {
                     <link rel="stylesheet" href="/css/app.css" />
                 </head>
                 <body>
-
                     <header>
-                        <nav class="navbar navbar-expand-md navbar-light bg-light">
-                            <div class="container-md">
-                                <a class="navbar-brand" href="/sneakers">
-                                    <img src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
-                                </a>
-                                <div>
-                                    <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item active">
-                                            <a id="top" class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="/sneakers/sell">SELL</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="/user/signup">SIGN UP</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="/user/login">LOGIN</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="/logout">LOGIN</a>
-                                        </li>
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#contact">CONTACT</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </nav>
+                        {
+                            username ?
+                                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                                    <div class="container-md">
+                                        <a class="navbar-brand" href="/sneakers">
+                                            <img src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
+                                        </a>
+                                        <div>
+                                            <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item active">
+                                                    <a id="top" class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
+                                                </li>
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" href="/sneakers/sell">SELL</a>
+                                                </li>
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" href="/">LOGOUT</a>
+                                                </li>
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav> :
+                                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                                    <div class="container-md">
+                                        <a class="navbar-brand" href="/">
+                                            <img src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
+                                        </a>
+                                        <div>
+                                            <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                        }
                     </header>
                     <main>
                         {this.props.children}
@@ -62,10 +73,10 @@ class DefaultLayout extends React.Component {
 
                                 <div class="col text-center">
 
-                                  <a href="/sneakers/#top"><p id="contact">SNEAKERS</p></a>  
-                                    <p>Contact: JCOLON1092@GMAIL.COM</p>
-                                    <p>Twitter: @JCCOLOGNE</p>
-                                    <p>Instagram:@_JULIOCOLON</p>
+                                    <a href="/sneakers/#top"><p class='footer-link' id="contact">SNEAKERS</p></a>
+                                    <p>Contact:<a class='footer-link' href="mailto: jcolon1092@gmail.com">JCOLON1092@GMAIL.COM</a> </p>
+                                    <p>Twitter:<a  class='footer-link' href="https://twitter.com/JCCologne">@JCCOLOGNE</a></p>
+                                    <p>Instagram:<a class='footer-link' href="https://www.instagram.com/_juliocolon/">@_JULIOCOLON</a></p>
 
                                 </div>
 
@@ -73,8 +84,8 @@ class DefaultLayout extends React.Component {
 
                         </div>
 
-                        <div class="footer-copyright text-center py-3">© 2022 Copyright:
-                            <a href="#">Julio Colon</a>
+                        <div class="footer-copyright text-center py-3">CREATED BY:
+                            <a class='footer-link' href="https://github.com/juliocolon">JULIO COLON</a>
                         </div>
 
                     </footer>

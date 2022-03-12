@@ -5,6 +5,7 @@ const express = require("express");
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 
+
 /////////////////////////////////////////
 // Create Route
 /////////////////////////////////////////
@@ -55,9 +56,11 @@ router.post("/login", async (req, res) => {
           const result = await bcrypt.compare(password, user.password);
           if (result) {
             // store some properties in the session object
+            // console.log("Username:" + username)
+            // console.log(req.session.username)
             req.session.username = username;
             req.session.loggedIn = true;
-            // redirect to fruits page if successful
+            // redirect to sneakers page if successful
             res.redirect("/sneakers");
           } else {
             // error if password doesn't match
