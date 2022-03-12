@@ -24,6 +24,12 @@ class New extends React.Component {
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">SIZE</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="size" placeholder='enter sneaker size' class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-sm-2 col-form-label">DESCRIPTION</label>
                         <div class="col-sm-10">
                             <textarea type="text" name="desc" placeholder='enter sneaker description' class="form-control">

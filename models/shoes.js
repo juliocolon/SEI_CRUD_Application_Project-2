@@ -5,9 +5,11 @@ const { Schema, model} = mongoose;
 
 const shoeSchema = new Schema({
     name: String, 
-    price: String, 
+    price: Number, 
     img: String, 
-    desc: String
+    desc: String, 
+    size: Number,
+    quantity: Number,
 })
 
 const Shoes = model('Shoes', shoeSchema); 

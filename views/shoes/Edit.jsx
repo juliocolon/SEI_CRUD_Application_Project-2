@@ -32,6 +32,12 @@ class Edit extends React.Component {
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">SIZE</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="size" placeholder='enter sneaker size' class="form-control" defaultValue={shoes.size} />
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-sm-2 col-form-label">IMAGE URL</label>
                         <div class="col-sm-10">
                             <input type="text" name="img" placeholder='enter image url' class="form-control" defaultValue={shoes.img} />

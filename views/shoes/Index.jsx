@@ -51,7 +51,12 @@ class Index extends React.Component {
                                         </a>
                                         <div class="card-body">
                                             <h5 class="card-title">{shoes.name}</h5>
+                                            <p>Size {shoes.size}</p>
                                             <p class="card-text"><small class="text-muted">${shoes.price}</small></p>
+                                            <form action={`/sneakers`}>
+                                                <input type="submit" value={`Buy ${shoes.name}`} />
+                                            </form>
+                                                
                                         </div>
                                     </div>
                                 </div>

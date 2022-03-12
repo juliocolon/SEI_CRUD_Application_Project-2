@@ -1,5 +1,5 @@
 const React = require('react');
-// import image from '../images/Sneakers.png'; 
+const Shoes = require('../models/shoes');
 
 
 class DefaultLayout extends React.Component {
@@ -32,10 +32,13 @@ class DefaultLayout extends React.Component {
                                             <a class="nav-link" href="/sneakers/sell">SELL</a>
                                         </li>
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">LOGIN</a>
+                                            <a class="nav-link" href="/user/signup">SIGN UP</a>
                                         </li>
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">CART</a>
+                                            <a class="nav-link" href="/user/login">LOGIN</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/logout">LOGIN</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="#contact">CONTACT</a>

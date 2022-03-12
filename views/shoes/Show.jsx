@@ -16,6 +16,7 @@ class Show extends React.Component {
                         <div class="card-body">
                             <img class="show-page-img" src={shoes.img} alt="Shoe Image" />
                             <p class="card-text">{shoes.desc}</p>
+                            <p class="card-text">Size {shoes.size}</p>
                             <p class="card-text">${shoes.price}</p>
                             <div>
                                 <a href={`/sneakers/${shoes._id}/edit`} class="btn btn-primary btn-show">{`Edit ${shoes.name} Listing`}</a>

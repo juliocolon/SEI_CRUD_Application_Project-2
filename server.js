@@ -7,6 +7,10 @@ const morgan = require('morgan'); //import morgan
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const shoesController = require('./controllers/shoes')
+const userController = require("./controllers/user")
+const path = require("path")
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const port = process.env.PORT || 3000
 
 
@@ -29,12 +33,22 @@ app.use(express.static("public")); // serve files from public statically
 /////////////
 // Routes
 /////////////
-app.use('/sneakers', shoesController)
+app.use('/sneakers', shoesController)// send all "/sneakers" routes to shoes router
+app.use("/user", userController); // send all "/user" routes to user router
 
-app.get('/', (req, res) => {
-    res.send(" Your server is running you better go catch it");
-})
+app.get("/", (req, res) => {
+    res.render("Index.jsx");
+  });
 
+  // middleware to setup session
+app.use(
+    session({
+      secret: process.env.SECRET,
+      store: MongoStore.create({ mongoUrl: process.env.DATABASE_URL }),
+      saveUninitialized: true,
+      resave: false,
+    })
+  );
 
 //////////////////////////////////////////////
 // Server Listener

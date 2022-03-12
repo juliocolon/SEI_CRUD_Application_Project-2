@@ -63,11 +63,11 @@ div.new-intro-text{
 
 
 form{
-    width: 50%;
+    width: 70%;
 }
 
 div.form-group{
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .show-page-img{
@@ -87,4 +87,8 @@ div.form-group{
     margin: auto;
     margin-top: 1%;
     max-width: 100%;
+}
+
+div.card-body{
+    margin-left: 1%;
 }
