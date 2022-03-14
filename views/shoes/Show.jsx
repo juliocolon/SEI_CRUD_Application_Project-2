@@ -3,12 +3,10 @@ const DefaultLayout = require('../Default.jsx');
 
 class Show extends React.Component {
     render() {
-        const { shoes } = this.props
+        const { shoes, username } = this.props
         return (
             <DefaultLayout title="Show Page" username={username}>
                 <div>
-
-
                     <div class="card text-center">
                         <div class="card-header">
                             <h1>{shoes.name} </h1>

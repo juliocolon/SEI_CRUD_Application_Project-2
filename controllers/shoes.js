@@ -32,7 +32,7 @@ router.get('/', (req, res) => {
 
 //////New Route 
 router.get('/sell', (req, res) => {
-    res.render('shoes/New')
+    res.render('shoes/New', {username: req.session.username })
 })
 
 /////Delete Route 
@@ -71,7 +71,7 @@ router.put('/:id', (req, res) => {
 router.post('/', (req, res) => {
     Shoes.create(req.body)
         .then((createdShoes) => {
-            res.redirect(`/sneakers/${createdShoes._id}`)
+            res.redirect(`/sneakers`)
         })
         .catch((error) => {
             res.status(400).json({ error })
@@ -84,7 +84,7 @@ router.get('/:id/edit', (req, res) => {
     const { id } = req.params
     Shoes.findById(id)
         .then((shoes) => {
-            res.render('shoes/Edit', { shoes })
+            res.render('shoes/Edit', { shoes, username: req.session.username  })
         })
         .catch((error) => {
             res.status(400).json({ error })
@@ -97,7 +97,7 @@ router.get('/:id', (req, res) => {
     const { id } = req.params;
     Shoes.findById(id)
         .then((shoes) => {
-            res.render('shoes/Show', { shoes })
+            res.render('shoes/Show', { shoes, username: req.session.username  })
         })
         .catch((error) => {
             res.status(400).json({ error })

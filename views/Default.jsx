@@ -24,12 +24,12 @@ class DefaultLayout extends React.Component {
                                 <nav class="navbar navbar-expand-md navbar-light bg-light">
                                     <div class="container-md">
                                         <a class="navbar-brand" href="/sneakers">
-                                            <img src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
+                                            <img id="top" src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
                                         </a>
                                         <div>
                                             <ul class="navbar-nav mr-auto">
                                                 <li class="nav-item active">
-                                                    <a id="top" class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
+                                                    <a  class="nav-link" href="/sneakers/#card-section">FOOTWEAR</a>
                                                 </li>
                                                 <li class="nav-item active">
                                                     <a class="nav-link" href="/sneakers/sell">SELL</a>
@@ -47,10 +47,16 @@ class DefaultLayout extends React.Component {
                                 <nav class="navbar navbar-expand-md navbar-light bg-light">
                                     <div class="container-md">
                                         <a class="navbar-brand" href="/">
-                                            <img src="/images/SNEAKERS.png" alt="Logo Image" height="150" width="150" />
+                                            <img src="/images/SNEAKERS.png" alt="Logo Image" height="120" width="120" />
                                         </a>
                                         <div>
                                             <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" href="/user/signup">SIGN UP</a>
+                                                </li>
+                                                <li class="nav-item active">
+                                                    <a class="nav-link" href="/user/login">LOGIN</a>
+                                                </li>
                                                 <li class="nav-item active">
                                                     <a class="nav-link" href="#contact">CONTACT</a>
                                                 </li>
@@ -72,12 +78,12 @@ class DefaultLayout extends React.Component {
 
 
                                 <div class="col text-center">
-
-                                    <a href="/sneakers/#top"><p class='footer-link' id="contact">SNEAKERS</p></a>
+                                    {username ? <a href="/sneakers/#top"><p class='footer-link' id="contact">SNEAKERS</p></a> :
+                                        <a href="/"><p class='footer-link' id="contact">SNEAKERS</p></a>
+                                    }
                                     <p>Contact:<a class='footer-link' href="mailto: jcolon1092@gmail.com">JCOLON1092@GMAIL.COM</a> </p>
-                                    <p>Twitter:<a  class='footer-link' href="https://twitter.com/JCCologne">@JCCOLOGNE</a></p>
-                                    <p>Instagram:<a class='footer-link' href="https://www.instagram.com/_juliocolon/">@_JULIOCOLON</a></p>
-
+                                    <p>Twitter:<a class='footer-link' target="_blank" href="https://twitter.com/JCCologne">@JCCOLOGNE</a></p>
+                                    <p>Instagram:<a class='footer-link' target="_blank" href="https://www.instagram.com/_juliocolon/">@_JULIOCOLON</a></p>
                                 </div>
 
                             </div>
@@ -85,7 +91,7 @@ class DefaultLayout extends React.Component {
                         </div>
 
                         <div class="footer-copyright text-center py-3">CREATED BY:
-                            <a class='footer-link' href="https://github.com/juliocolon">JULIO COLON</a>
+                            <a class='footer-link' target="_blank" href="https://github.com/juliocolon">JULIO COLON</a>
                         </div>
 
                     </footer>
