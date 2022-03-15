@@ -109,6 +109,10 @@ footer{
     height: 100%;
 }
 
+footer.page-footer{
+    height: 60vh;
+}
+
 .footer-link{
     text-decoration: underline;
 }
