@@ -3,7 +3,7 @@
 ![SNEAKERS](https://github.com/juliocolon/SEI_CRUD_Application_Project-2/blob/main/public/images/Sneakers%20App.png)
 
 ## Technogies 
-HTML, CSS, JavaScript, Node.JS, JSX, React.js, Express, MongoDB, Heroku
+HTML, CSS, JavaScript, Node.JS, JSX, React.JS, Express, MongoDB, Heroku
 
 ## Getting Started
 - The SNEAKERS App is an online marketplace for the reselling of sneakers
