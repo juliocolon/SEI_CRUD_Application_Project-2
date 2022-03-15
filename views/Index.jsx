@@ -34,7 +34,7 @@ class Index extends React.Component {
                             <img src="/images/airmax.png" alt="Nike Airmax 95" width="700" height="400" />
                         </div>
                         <div class="carousel-item">
-                            <img src="/images/salomon.png" alt="Salomon Raid Wind Advanced" width="700" height="400" />
+                            <img src="/images/salomon.png" alt="Salomon Raid Wind Advanced" width="1100" height="500" />
                         </div>
                         <div class="carousel-item">
                             <img src="/images/newbalanceblue.png" alt="New Balance 550" width="700" height="400" />
@@ -43,6 +43,13 @@ class Index extends React.Component {
                             <img src="/images/nikeAF1.png" alt="Nike AF1" width="700" height="400" />
                         </div>
                     </div>
+
+                    <a class="carousel-control-prev" href="#shoe-carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#shoe-carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
             </DefaultLayout>
         )
