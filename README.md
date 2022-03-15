@@ -21,11 +21,11 @@ Implemented CRUD operations, moved on to styling with CSS Bootstarp 4.6, impleme
 
 ## Next Steps
 - I would like to implement the ability to view a user profile, where their listings are shown and they can edit or delete 
-- I would like the index view to only display all listings and allow users to add a product to their cart 
-- I would like the user to be able to add a file from their local machine and the file be stored on my server, to then utilize in the Index and Show page views 
+- I would like the Index view to only display all listings and allow users to add a product to their cart 
+- I would like the user to be able to add a file from their local machine and the file be stored on the server in which the application is deployed from, to then utilize in the Index and Show page views 
 - I would like to improve the responsiveness of the application
 - I would like to add some additional views to improve the UX when a user creates an account and logs in 
-- I would like to user third party user authentication APIs
+- I would like to use a third party user authentication API and payment processing 
 
 
 
