@@ -45,7 +45,7 @@ class New extends React.Component {
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                        <input type="submit" value="Create a Shoe" />
+                        <input id="user-button" type="submit" value="SUBMIT" />
                         </div>
                     </div>
                 </form>
