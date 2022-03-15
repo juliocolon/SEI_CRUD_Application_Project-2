@@ -23,7 +23,7 @@ class Show extends React.Component {
                         </div>
                         <div class="card-footer text-muted">
                             <form id="delete" action={`/sneakers/${shoes._id}?_method=DELETE`} method="POST">
-                                <input type="submit" value="Delete Listing" />
+                                <input id="user-button" type="submit" value="Delete Listing" />
                             </form>
                         </div>
                     </div>
