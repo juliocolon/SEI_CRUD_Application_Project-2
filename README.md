@@ -3,7 +3,7 @@
 ![SNEAKERS](https://github.com/juliocolon/SEI_CRUD_Application_Project-2/blob/main/public/images/Sneakers%20App.png)
 
 ## Technogies 
-HTML, CSS, JavaScript, Node.JS, JSX, REACT, Express, MongoDB
+HTML, CSS, JavaScript, Node.JS, JSX, React.JS, Express, MongoDB, Heroku
 
 ## Getting Started
 - The SNEAKERS App is an online marketplace for the reselling of sneakers
@@ -14,7 +14,7 @@ HTML, CSS, JavaScript, Node.JS, JSX, REACT, Express, MongoDB
 - The user can edit and or delete their created post
 
 ## Approach
-Implemented CRUD operations, moved on to styling with CSS Bootstarp 4.6, implemented log-in authentication and user schema to connect to MongoDB, made navigation dynamic according to when a user is logged in or out.  
+Implemented CRUD operations, moved on to styling with CSS Bootstarp 4.6, implemented session based authentication and user schema to connect to MongoDB, made navigation dynamic according to when a user is logged in or out.  
 
 ## Live Site Link 
 [Sneakers App](https://sneakers-app-sei.herokuapp.com/)
