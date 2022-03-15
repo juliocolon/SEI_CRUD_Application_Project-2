@@ -14,7 +14,7 @@ HTML, CSS, JavaScript, Node.JS, JSX, React.js, Express, MongoDB, Heroku
 - The user can edit and or delete their created post
 
 ## Approach
-Implemented CRUD operations, moved on to styling with CSS Bootstarp 4.6, implemented log-in authentication and user schema to connect to MongoDB, made navigation dynamic according to when a user is logged in or out.  
+Implemented CRUD operations, moved on to styling with CSS Bootstarp 4.6, implemented session based authentication and user schema to connect to MongoDB, made navigation dynamic according to when a user is logged in or out.  
 
 ## Live Site Link 
 [Sneakers App](https://sneakers-app-sei.herokuapp.com/)
