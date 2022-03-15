@@ -26,7 +26,7 @@ class Login extends React.Component {
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                        <input type="submit" value="LOGIN" />
+                        <input id="user-button" type="submit" value="LOGIN" />
                         </div>
                     </div>
                 </form>
