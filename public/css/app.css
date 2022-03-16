@@ -9,9 +9,7 @@ body{
     font-weight: bold;
     font-size: larger;
 }
-main{
-    max-height: 130vh;
-}
+
 
 .carousel-inner img {
     width: 100%;
@@ -48,7 +46,7 @@ main{
   .page-footer{
       color: whitesmoke;
       background-color: black;
-      height: 50vh;
+      height: 50%;
       font-size: larger;
   }
 
@@ -108,12 +106,8 @@ div.card-body{
     color: black;
 }
 
-footer{
-    height: 100%;
-}
-
 footer.page-footer{
-    height: 50vh;
+    height: 70vh;
 }
 
 .footer-link{
